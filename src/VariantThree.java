@@ -8,7 +8,8 @@ public class VariantThree {
         // TaskOne.RandomOfNumbers();
         // TaskTwo.LengthOfNumbers();
         // PatientManager.workingWithPatients();
-        AirplaneManager.airplaneControl();
+        //AirplaneManager.airplaneControl();
+        MyAccount.myAccount();
     }
 }
 
