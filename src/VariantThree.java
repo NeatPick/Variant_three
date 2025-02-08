@@ -11,7 +11,7 @@ public class VariantThree {
     public static void main(String[] args) {
 
         //TaskOne.RandomOfNumbers();
-        TaskTwo.LengthOfNumbers();
+        //TaskTwo.LengthOfNumbers();
 
     }
 
@@ -50,7 +50,7 @@ class TaskTwo {
 
         double generalCountNumber = 0;
         for (int i = 0; i < n; i++) {
-            System.out.print("Введите число " + (i+1) + ": ");
+            System.out.print("Введите число " + (i + 1) + ": ");
             numbers[i] = scan.nextInt();
             int len = String.valueOf(numbers[i]).length();
             generalCountNumber += len;
@@ -73,5 +73,11 @@ class TaskTwo {
                 System.out.println("Длина числа " + numbers[i] + " составляет " + length);
             }
         }
+
     }
 }
+
+
+
+
+
