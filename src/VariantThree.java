@@ -2,9 +2,6 @@
                        ВАРИАНТ 3
 */
 
-import java.util.Random;
-import java.util.Scanner;
-
 public class VariantThree {
 
 
@@ -12,70 +9,45 @@ public class VariantThree {
 
         //TaskOne.RandomOfNumbers();
         //TaskTwo.LengthOfNumbers();
-
+        WorkingWithPatients();
     }
 
+    private static void WorkingWithPatients(){
+        Patient[] patients = new Patient[5];
 
-}
+        patients[0] = new Patient(1, "Абрамова", "Алёна", "Викторовна", "ул. Смолина, 90А",
+                "+7 (951)633-62-59", 88564, "Грипп");
+        patients[1] = new Patient(2, "Баранов", "Анатолий", "Леонидович", "пр. Строителей, 12",
+                "369-369", 140254, "Аллергия");
+        patients[2] = new Patient(3, "Романова", "Кристина", "Сергеевна", "ул. Калашникова, 37",
+                "112-467", 747951, "Грипп");
+        patients[3] = new Patient(4, "Иванов", "Иван", "Иванович", "ул. Ленина, 3",
+                "911-004", 46715, "ОРВИ");
+        patients[4] = new Patient(5, "Власов", "Максим", "Васильевич", "ул. Комсомольская, 20",
+                "771-543", 465228, "Грипп");
+        PrintPatients(patients);
+        System.out.println("_________________________________________________________________");
+        PrintDiagnosisPatient(patients);
+    }
 
-class TaskOne {
-
-    public static void RandomOfNumbers() {
-        System.out.print("Введите количество случайных чисел: ");
-        Scanner in = new Scanner(System.in);
-        int count = in.nextInt();
-        Random random = new Random();
-        int array[] = new int[count];
-        System.out.print("Числа без перехода: ");
-        for (int i = 0; i < array.length; i++) {
-            int randomize = random.nextInt(100);
-            array[i] +=randomize;
-            System.out.print(array[i] + " ");
-        }
-        System.out.println();
-        System.out.println("Числа c переходом: ");
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i] + " ");
+    private static void PrintPatients(Patient[] patients){
+        System.out.println("Список пациентов: ");
+        for (int i=0; i<patients.length; i++){
+            System.out.println(patients[i]);
         }
     }
-}
-
-class TaskTwo {
-
-    public static void LengthOfNumbers() {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Введите количество чисел: ");
-        int n = scan.nextInt();
-        int[] numbers = new int[n];
-
-        double generalCountNumber = 0;
-        for (int i = 0; i < n; i++) {
-            System.out.print("Введите число " + (i + 1) + ": ");
-            numbers[i] = scan.nextInt();
-            int len = String.valueOf(numbers[i]).length();
-            generalCountNumber += len;
-        }
-        double average = generalCountNumber / n;
-        System.out.println("\nСредняя длина чисел: " + average);
-
-        System.out.println("\nЧисла с длиной меньше средней:");
-        for (int i = 0; i < n; i++) {
-            int length = String.valueOf(numbers[i]).length();
-            if (length < average) {
-                System.out.println("Длина числа " + numbers[i] + " составляет " + length);
+    private static void PrintDiagnosisPatient(Patient[] patients){
+        System.out.println("Пациенты с диагнозом Грипп: ");
+        for (int i = 0; i < patients.length; i++){
+            if (patients[i].getDiagnosis().equals("Грипп")) {
+                System.out.println(patients[i]);
             }
         }
-
-        System.out.println("\nЧисла с длиной больше средней:");
-        for (int i = 0; i < n; i++) {
-            int length = String.valueOf(numbers[i]).length();
-            if (length > average) {
-                System.out.println("Длина числа " + numbers[i] + " составляет " + length);
-            }
-        }
-
     }
 }
+
+
+
 
 
 

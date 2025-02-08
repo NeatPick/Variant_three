@@ -1,14 +1,15 @@
 public class Patient {
+
     int id;
     String surname;
     String firstname;
     String patronymic;
     String address;
-    char phoneNumber;
+    String phoneNumber;
     int patientIDNumber;
     String diagnosis;
 
-    public  Patient(int id, String surname, String firstname, String patronymic, String address, char phoneNumber,
+    public  Patient(int id, String surname, String firstname, String patronymic, String address, String phoneNumber,
                     int patientIDNumber, String diagnosis) {
         this.id = id;
         this.surname = surname;
@@ -55,10 +56,10 @@ public class Patient {
     public void setAddress(String address){
         this.address = address;
     }
-    public char getPhoneNumber(){
+    public String getPhoneNumber(){
         return phoneNumber;
     }
-    public void setPhoneNumber(char phoneNumber){
+    public void setPhoneNumber(String phoneNumber){
         this.phoneNumber = phoneNumber;
     }
     public int getPatientIDNumber(){
@@ -76,16 +77,15 @@ public class Patient {
 
     @Override
     public String toString(){
-        return "Patient{" +
+        return "Пациент (" +
                 "id=" + id +
-                ", surname='" + surname + '\'' +
-                ", firstname='" + firstname + '\'' +
-                ", patronymic='" + patronymic + '\'' +
-                ", address='" + address + '\'' +
-                ", surname='" + surname + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", patientIDNumber=" + patientIDNumber +
-                ", diagnosis='" + diagnosis + '\'' +
-                '}';
+                ", Имя: " + surname +
+                ", Фамилия: " + firstname +
+                ", Отчество: " + patronymic +
+                ", Домашний адрес: " + address +
+                ", Телефон: " + phoneNumber +
+                ", Номер медицинской карты: " + patientIDNumber +
+                ", Диагноз: " + diagnosis +
+                ')';
     }
 }
