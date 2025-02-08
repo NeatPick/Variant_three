@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class TaskTwo {
 
-    public static void LengthOfNumbers() {
+    public static void lengthOfNumbers() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите количество чисел: ");
         int n = scan.nextInt();

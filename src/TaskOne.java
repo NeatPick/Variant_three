@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 class TaskOne {
 
-    public static void RandomOfNumbers() {
+    public static void randomOfNumbers() {
         System.out.print("Введите количество случайных чисел: ");
         Scanner in = new Scanner(System.in);
         int count = in.nextInt();
