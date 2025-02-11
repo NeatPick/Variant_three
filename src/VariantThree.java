@@ -2,6 +2,7 @@
                        ВАРИАНТ 3
 */
 
+import Task_8.CorrectionOfText;
 import task_1.TaskOne;
 import task_2.TaskTwo;
 import task_3.PatientManager;
@@ -26,20 +27,30 @@ public class VariantThree {
         System.out.print("Выберите задание, для тестирования (1-10): ");
         item = scan.nextInt();
         switch (item) {
-            case 1: TaskOne.randomOfNumbers();
+            case 1:
+                TaskOne.randomOfNumbers();
             break;
-            case 2: TaskTwo.lengthOfNumbers();
+            case 2:
+                TaskTwo.lengthOfNumbers();
             break;
-            case 3: PatientManager.workingWithPatients();
+            case 3:
+                PatientManager.workingWithPatients();
             break;
-            case 4: AirplaneManager.airplaneControl();
+            case 4:
+                AirplaneManager.airplaneControl();
             break;
-            case 5: MyAccount.myAccount();
+            case 5:
+                MyAccount.myAccount();
             break;
-            case 6: CandyFactory.CandyInfo();
+            case 6:
+                CandyFactory.CandyInfo();
             break;
-            case 7: UserManager.workingWithUsers();
+            case 7:
+                UserManager.workingWithUsers();
             break;
+            case 8:
+                CorrectionOfText.testString();
+                break;
             default: System.out.println("Неверно выбран номер задания!");
         }
     }
