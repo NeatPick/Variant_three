@@ -1,6 +1,8 @@
+package task_2;
+
 import java.util.Scanner;
 
-class TaskTwo {
+public class TaskTwo {
 
     public static void lengthOfNumbers() {
         Scanner scan = new Scanner(System.in);

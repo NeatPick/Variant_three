@@ -2,6 +2,14 @@
                        ВАРИАНТ 3
 */
 
+import task_1.TaskOne;
+import task_2.TaskTwo;
+import task_3.PatientManager;
+import task_4.AirplaneManager;
+import task_5.MyAccount;
+import task_6.CandyFactory;
+import task_7.UserManager;
+
 import java.util.Scanner;
 
 public class VariantThree {

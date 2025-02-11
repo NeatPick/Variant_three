@@ -1,3 +1,4 @@
+package task_6;
 
 interface Candies {
     String Manufacturer(); // Производитель

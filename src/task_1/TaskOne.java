@@ -1,7 +1,9 @@
+package task_1;
+
 import java.util.Random;
 import java.util.Scanner;
 
-class TaskOne {
+public class TaskOne {
 
     public static void randomOfNumbers() {
         System.out.print("Введите количество случайных чисел: ");
