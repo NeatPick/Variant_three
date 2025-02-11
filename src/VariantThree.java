@@ -30,6 +30,8 @@ public class VariantThree {
             break;
             case 6: CandyFactory.CandyInfo();
             break;
+            case 7: UserManager.workingWithUsers();
+            break;
             default: System.out.println("Неверно выбран номер задания!");
         }
     }
