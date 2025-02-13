@@ -65,7 +65,7 @@ public class CandyFactory{
 
         Lollipop lollipop = new Lollipop("Кармолис");
         lollipop.produce(50);
-        lollipop.editingInfo("Леденец со имбирь-лимон");
+        lollipop.editingInfo("Леденец со вкусом имбирь-лимон");
         System.out.println(lollipop.Manufacturer());
         System.out.println(lollipop.Info());
 

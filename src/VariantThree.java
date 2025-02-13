@@ -2,7 +2,10 @@
                        ВАРИАНТ 3
 */
 
-import Task_8.CorrectionOfText;
+import Task_10.SearchingVowel;
+import Task_9.RealNumbers;
+import Task_9.TransformedException;
+import task_8.CorrectionOfText;
 import task_1.TaskOne;
 import task_2.TaskTwo;
 import task_3.PatientManager;
@@ -22,35 +25,46 @@ public class VariantThree {
     private static void itemMenu(){
         System.out.println("Лабораторные работы по Java.");
         System.out.println("Выполнил Яковлев Александр студент группы ЗБ 762. ВАРИАНТ 3");
-        int item;
+        String item;
         Scanner scan = new Scanner(System.in);
-        System.out.print("Выберите задание, для тестирования (1-10): ");
-        item = scan.nextInt();
+        System.out.print("Выберите задание, для тестирования (1-9.1, 10, 10.2): ");
+        item = scan.nextLine();
         switch (item) {
-            case 1:
+            case "1":
                 TaskOne.randomOfNumbers();
             break;
-            case 2:
+            case "2":
                 TaskTwo.lengthOfNumbers();
             break;
-            case 3:
+            case "3":
                 PatientManager.workingWithPatients();
             break;
-            case 4:
+            case "4":
                 AirplaneManager.airplaneControl();
             break;
-            case 5:
+            case "5":
                 MyAccount.myAccount();
             break;
-            case 6:
+            case "6":
                 CandyFactory.CandyInfo();
             break;
-            case 7:
+            case "7":
                 UserManager.workingWithUsers();
             break;
-            case 8:
+            case "8":
                 CorrectionOfText.testString();
                 break;
+            case "9":
+                RealNumbers.operationsNumbers();
+                break;
+            case "9.2":
+                TransformedException.exception();
+                break;
+            case "10":
+                SearchingVowel.task10_1();
+                break;
+            case "10.2": SearchingVowel.task10_2();
+            break;
             default: System.out.println("Неверно выбран номер задания!");
         }
     }
