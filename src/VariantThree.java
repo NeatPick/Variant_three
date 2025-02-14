@@ -2,9 +2,10 @@
                        ВАРИАНТ 3
 */
 
-import Task_10.SearchingVowel;
-import Task_9.RealNumbers;
-import Task_9.TransformedException;
+import task_10.SearchingVowel;
+import task_11.DirectoryStreamExample;
+import task_9.RealNumbers;
+import task_9.TransformedException;
 import task_8.CorrectionOfText;
 import task_1.TaskOne;
 import task_2.TaskTwo;
@@ -13,7 +14,6 @@ import task_4.AirplaneManager;
 import task_5.MyAccount;
 import task_6.CandyFactory;
 import task_7.UserManager;
-
 import java.util.Scanner;
 
 public class VariantThree {
@@ -64,7 +64,11 @@ public class VariantThree {
                 SearchingVowel.task10_1();
                 break;
             case "10.2": SearchingVowel.task10_2();
+            case "11":
+                DirectoryStreamExample.checkDirectory();
             break;
+
+
             default: System.out.println("Неверно выбран номер задания!");
         }
     }

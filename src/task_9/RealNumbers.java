@@ -1,4 +1,4 @@
-package Task_9;
+package task_9;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
